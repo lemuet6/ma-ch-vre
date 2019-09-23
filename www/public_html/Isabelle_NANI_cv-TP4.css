@@ -1,0 +1,63 @@
+body{
+	width: 99%;
+	display: flex;
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+p,ul li {
+	font-size: 1em;
+}
+
+aside {
+	width: 10%;
+	background-color: LightSlateGrey ;
+	border: 1px solid LightSlateGrey;
+	border-radius : .3em;
+}
+section#right {
+	width: 85%;
+	padding: 1em;
+	
+}
+header{
+	text-align:center;
+}
+figure{
+	position : absolute;
+	top: 1.2em;
+	right: .1em;
+	
+}
+section#right article {
+	display: flex;
+	justify-content: space-around;
+}
+section#right article section {
+	margin: 1em;
+}
+
+/* Media querries for mobil < 1024 px */
+@media only screen and (max-width: 1024px) {
+	aside {
+		display: none;
+	}
+	section#right article {
+		flex-direction: column;
+	}
+}
+
+
+/* Media querries for mobil < 750 px */
+@media only screen and (max-width: 750px) {
+    img{
+        display : none;
+    }
+}
